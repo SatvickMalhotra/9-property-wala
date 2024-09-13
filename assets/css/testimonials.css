@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.testimonials h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+/* Testimonial container with three testimonials per row */
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 1rem; /* Reduced gap */
+    padding: 0 0.5rem;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    padding: 1rem;
+    max-width: 450px;
+    max-height: 400px; /* Set maximum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is evenly spaced */
+}
+
+.testimonial-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* For displaying full testimonials */
+.testimonial-item p {
+    overflow: auto; /* Allows full testimonial text to be displayed */
+    max-height: 150px; /* Max height for the text content */
+}
+
+/* Central WhatsApp button */
+.central-whatsapp {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0dd610ec; /* WhatsApp green */
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 51px;
+    text-align: center;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.central-whatsapp:hover {
+    background-color: #128C7E; /* WhatsApp dark green */
+}

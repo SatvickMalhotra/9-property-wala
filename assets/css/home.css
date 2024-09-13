@@ -1,0 +1,310 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* Light background */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Dark blue */
+    color: #fff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+header .logo img {
+    height: 50px;
+    display: flex; /* To align the logo and title horizontally */
+    align-items: center;
+    cursor: pointer; /* Ensure the logo is clickable */
+}
+
+header .logo h1 {
+    margin-left: 10px; /* Space between the logo and title */
+    font-size: 1.8rem;
+    color: #fff; /* Match the color to the existing header */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Bold navigation links */
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Bright hover color */
+}
+
+/* Main Search Section */
+.main-search {
+    text-align: center;
+    background-image: url('../images/home_main_image.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 6rem 1rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-search h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    color: white;
+    font-style: italic;
+    transform: translateY(-10px); /* Small 3D effect */
+}
+
+.main-search h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* 3D effect for tagline */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #ffffff; /* White background */
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* What We Offer Section */
+.what-we-offer {
+    padding: 3rem 1rem;
+    background-color: #e6f0ff; /* Light blue background */
+    text-align: center;
+}
+
+.what-we-offer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 1.5rem;
+}
+
+.offer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%; /* Use full width */
+}
+
+.service {
+    width: 100%;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Slider Container - Adjusted for Square Images */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    height: 300px; /* Set height for square images */
+}
+
+.slider {
+    display: flex; /* Flex for horizontal alignment */
+    transition: transform 0.5s ease;
+    width: 100%; /* Ensure full width usage */
+}
+
+.slider img {
+    width: 300px; /* Force images to square format */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px; /* Add space between images */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: #ffcc00; /* Bright hover color */
+}
+
+/* Sidebar Section - Enhancing Buttons */
+.sidebar {
+    display: none; /* Sidebar is hidden by default */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 30%; /* Adjust to fit next to services */
+    padding: 2rem 1rem;
+}
+
+/* Custom Styled Button Boxes for Listings & Work */
+.toggle-listings-btn,
+.toggle-work-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+}
+
+.toggle-listings-btn:hover,
+.toggle-work-btn:hover {
+    background-color: #ffcc00; /* Hover effect */
+}
+
+/* Contact Us Section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Styling for the Opening Hours Table */
+.contact-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.contact-info table th, .contact-info table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.contact-info table th {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+}
+
+/* Improved Contact Us styling */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-info h3 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* Social Media Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-buttons .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2b12cd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.social-buttons .button:hover {
+    background-color: #ffcc00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .slider-container {
+        height: 250px; /* Adjust the height for smaller screens */
+    }
+
+    .slider img {
+        height: 250px; /* Keep the images responsive */
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

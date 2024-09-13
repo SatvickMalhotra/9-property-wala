@@ -1,0 +1,129 @@
+/* contact.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contact Section */
+.contact-us {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.contact-info {
+    text-align: left;
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+.contact-info table, .contact-info th, .contact-info td {
+    border: 1px solid #ddd;
+}
+
+.contact-info th, .contact-info td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+/* Buttons for Facebook and WhatsApp */
+.contact-buttons {
+    margin-top: 1rem;
+}
+
+.contact-buttons button {
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.facebook-button {
+    background-color: #4267B2;
+    color: #fff;
+}
+
+.facebook-button:hover {
+    background-color: #365899;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: #fff;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.map {
+    flex: 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 600px; /* Increase map height */
+    border: 0;
+}
