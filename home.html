@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Property Wala - Home</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo" onclick="location.href='home.html'">
+            <img src="assets/images/logo_image.png" alt="9 Property Wala Logo">
+            <h1>9 Property Wala</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Search Section -->
+    <section class="main-search">
+        <h1>Looking for a Dream Home? Contact Us!</h1>
+        <h2>We will help you find your dream home.</h2>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>We are a leading real estate company offering a range of services including real estate, interior designing, and catering.</p>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="what-we-offer">
+        <h2>What We Offer</h2>
+        <div class="offer-content">
+            <div class="services">
+                <!-- Real Estate Slider -->
+                <div class="service real-estate">
+                    <h3>Real Estate</h3>
+                    <p>We provide top-notch real estate services.</p>
+                    <div class="slider-container">
+                        <button class="prev" onclick="moveSlides(-1, 0)">&#10094;</button>
+                        <div class="slider real-estate-slider">
+                            <!-- Real Estate Images will be loaded here dynamically -->
+                        </div>
+                        <button class="next" onclick="moveSlides(1, 0)">&#10095;</button>
+                    </div>
+                </div>
+
+                <!-- Interior Designing Slider -->
+                <div class="service interior-designing">
+                    <h3>Interior Designing</h3>
+                    <p>Our interior designing services are the best in the industry.</p>
+                    <div class="slider-container">
+                        <button class="prev" onclick="moveSlides(-1, 1)">&#10094;</button>
+                        <div class="slider interior-designing-slider">
+                            <!-- Interior Designing Images will be loaded here dynamically -->
+                        </div>
+                        <button class="next" onclick="moveSlides(1, 1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <!-- Catering Service Slider -->
+                <div class="service catering">
+                    <h3>Catering</h3>
+                    <p>We offer exceptional catering services for all your events.</p>
+                    <div class="slider-container">
+                        <button class="prev" onclick="moveSlides(-1, 2)">&#10094;</button>
+                        <div class="slider catering-slider">
+                            <!-- Catering Images will be loaded here dynamically -->
+                        </div>
+                        <button class="next" onclick="moveSlides(1, 2)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar for Listings and Top Work -->
+            <aside class="sidebar" style="display:none;">
+                <section class="top-listings">
+                    <h2>Top Listings</h2>
+                    <div class="listing-box">
+                        <a href="listings.html" class="button">View All Listings</a>
+                    </div>
+                </section>
+
+                <section class="interior-designing-top-work">
+                    <h2>Interior Designing Top Work</h2>
+                    <div class="design-box">
+                        <a href="services.html" class="button">View Our Work</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+
+        <!-- Buttons to toggle sidebar visibility -->
+        <button class="toggle-listings-btn" onclick="location.href='listings.html'">View All Listings</button>
+        <button class="toggle-work-btn" onclick="location.href='services.html'">View Our Work</button>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="moveSlides(-1, 3)">&#10094;</button>
+            <div class="slider client-testimonial-slider">
+                <!-- Testimonial images will be loaded here dynamically -->
+            </div>
+            <button class="next" onclick="moveSlides(1, 3)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h2>Get In Touch With Us</h2>
+        <p>Get Real Help From The Best Real Estate Consultants In Delhi!</p>
+        <div class="contact-container" style="display: flex; flex-direction: column;">
+            <!-- Contact info -->
+            <div style="display: flex; justify-content: space-between;">
+                <div class="contact-info" style="flex: 1; padding-right: 20px;">
+                    <h3>Opening Hours</h3>
+                    <table>
+                        <tr><th>Day</th><th>Timing</th></tr>
+                        <tr><td>Monday</td><td>8 AM to 10 PM</td></tr>
+                        <tr><td>Tuesday</td><td>8 AM to 10 PM</td></tr>
+                        <tr><td>Wednesday</td><td>8 AM to 10 PM</td></tr>
+                        <tr><td>Thursday</td><td>8 AM to 10 PM</td></tr>
+                        <tr><td>Friday</td><td>8 AM to 10 PM</td></tr>
+                        <tr><td>Saturday</td><td>7 AM to 11 PM</td></tr>
+                        <tr><td>Sunday</td><td>7 AM to 11 PM</td></tr>
+                    </table>
+                    <h3>Contact Us</h3>
+                    <p>Phone: +91 87006 21984</p>
+                    <p>Email: info@9propertwala.com</p>
+                    <p>Address: 9 - Shop Number, Amrapali Village Apartments Market, Kala Pathar Road</p>
+                </div>
+
+                <!-- Map on the right -->
+                <div class="map" style="flex: 1;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14007.43717630917!2d77.3579456!3d28.6339789!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce57955b2540f%3A0xa9465015daa4597b!2s9%20Property%20Wala%20%7C%20Flats%20in%20Indirapuram%20%7C%20Property%20Dealer%20Indirapuram%20Real%20Estate%20Agent!5e0!3m2!1sen!2sin!4v1725968577344!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="650" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="social-buttons" style="text-align: center; margin-top: 20px;">
+                <a href="https://www.facebook.com/9PropertyWala" class="button">Facebook Page</a>
+                <a href="https://wa.me/9311632755" class="button">WhatsApp Chat</a>
+                <a href="https://www.instagram.com/9propertywala/" class="button">Instagram Page</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/home.js"></script>
+</body>
+</html>
